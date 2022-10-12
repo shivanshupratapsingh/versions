@@ -1,7 +1,7 @@
 services:
   lrctl:
-    image: gcr.io/lrcollection/lrctl
-    version: 6.5.5
+    image: gcr.io/datacollector-215718/lrctl
+    version: 6.5.5-token-qualys-fim-issue-dirty
   open-collector:
     image: gcr.io/lrcollection/opencollector
     version: 5.6.9
@@ -45,8 +45,8 @@ services:
     image: gcr.io/lrcollection/beats/kafkabeat
     version: 6.0.6
   qualysfimbeat:
-    image: gcr.io/lrcollection/beats/qualysfimbeat
-    version: 6.0.5
+    image: gcr.io/datacollector-215718/beats/qualysfimbeat
+    version: 6.0.5-token-qualys-fim-issue-dirty
   proofpointbeat:
     image: gcr.io/lrcollection/beats/proofpointbeat
     version: 6.0.3
